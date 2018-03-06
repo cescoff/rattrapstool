@@ -43,7 +43,7 @@
 
 	
     <path name="BodyFrame" layer="Main" action="CUT" >
-		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
 		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalTopRightPoint//Center//0" y="GlobalTopRightPoint//Center//0" />
 		<point x="GlobalBottomRightPoint//Center//0" y="GlobalBottomRightPoint//Center//0" />
