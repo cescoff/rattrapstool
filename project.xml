@@ -4,12 +4,12 @@
     <thumbnail-url>https://github.com/cescoff/rattrapstool/raw/master/preview.jpg</thumbnail-url>
     <description>Description</description>
     <presentation>&lt;p&gt;Presentation&lt;/p&gt;</presentation>
-    <variables-url>https://github.com/cescoff/rattrapstool/Variables.xml</variables-url>
-    <template-url>https://github.com/cescoff/rattrapstool/Plan.xml</template-url>
-    <output-config-url>https://github.com/cescoff/rattrapstool/PlanOutputConfig.xml</output-config-url>
-    <dynamic-preview-url>https://github.com/cescoff/rattrapstool/Thumbnail.xml</dynamic-preview-url>
-    <dynamic-preview-output-url>https://github.com/cescoff/rattrapstool/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
-    <documentation-url>https://github.com/cescoff/rattrapstool/Plan.xml</documentation-url>
+    <variables-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Variables.xml</variables-url>
+    <template-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Plan.xml</template-url>
+    <output-config-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/PlanOutputConfig.xml</output-config-url>
+    <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Thumbnail.xml</dynamic-preview-url>
+    <dynamic-preview-output-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
+    <documentation-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Plan.xml</documentation-url>
     <default>
         <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">420</variable>
         <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
