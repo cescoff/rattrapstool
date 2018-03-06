@@ -40,16 +40,28 @@
 
 <!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
-
 	
-    <path name="BodyFrame" layer="Main" action="CUT" >
+	<!-- BODY FRAME -->
+	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
 		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalTopRightPoint//Center//0" y="GlobalTopRightPoint//Center//0" />
 		<point x="GlobalBottomRightPoint//Center//0" y="GlobalBottomRightPoint//Center//0" />
 		<point x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0" />
 		<point x="SeatHingeBottomLeft//Center//" y="SeatHingeBottomLeft//Center//0" />
-    </path>
+	</path>
+	
+	<!-- HANDLE -->
+	<circle center-x="SeatHingeTopRight//Center//${upRight}" center-y="SeatHingeTopRight//Center//+${seatWidth}/2-${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Main"/>
+    	<circle center-x="SeatHingeBottomRight//Center//${upRight}" center-y="SeatHingeBottomRight//Center//-${seatWidth}/2+${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Main"/>
+	<path name="HandCarryTopLeft" layer="Main" action="CUT" >
+		<point x="HandCarryTopCircle//RadiusLeft//0" y="HandCarryTopCircle//RadiusLeft//0" />
+		<point x="HandCarryBottomCircle//RadiusLeft//0" y="HandCarryBottomCircle//RadiusLeft//0" />
+	</path>
+	<path name="HandCarryTopRight" layer="Main" action="CUT" >
+		<point x="HandCarryTopCircle//RadiusRight//0" y="HandCarryTopCircle//RadiusRight//0" />
+		<point x="HandCarryBottomCircle//RadiusRight//0" y="HandCarryBottomCircle//RadiusRight//0" />
+	</path>
 	
 	<!-- ################################### -->
 	<!-- ###         HOLES LAYER        #### -->
