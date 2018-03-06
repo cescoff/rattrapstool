@@ -40,7 +40,22 @@
 
 <!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
-    
+
+	
+    <path name="BodyFrame" layer="Main" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopRightPoint//Center//0" y="GlobalTopRightPoint//Center//0" />
+		<point x="GlobalBottomRightPoint//Center//0" y="GlobalBottomRightPoint//Center//0" />
+		<point x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//" y="SeatHingeBottomLeft//Center//0" />
+    </path>
+	
+	<!-- ################################### -->
+	<!-- ###         HOLES LAYER        #### -->
+	<!-- ################################### -->
+	
+	
 	<!-- ################################### -->
 	<!-- ###          TOP LAYER         #### -->
 	<!-- ################################### -->
