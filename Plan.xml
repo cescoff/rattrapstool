@@ -68,33 +68,33 @@
 	<!-- ################################### -->
 	
 	<!-- Corner holes Body Frame -->
-	<circle center-x="GlobalTopLeftPoint//Center//${upRight}/2" center-y="GlobalTopLeftPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftBodyFrameHole" layer="Main"/>
-    	<circle center-x="GlobalBottomLeftPoint//Center//${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftBodyFrameHole" layer="Main"/>
-	<circle center-x="GlobalTopRightPoint//Center//-${TopUpRight}/2" center-y="GlobalTopRightPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightBodyFrameHole" layer="Main"/>
-    	<circle center-x="GlobalBottomRightPoint//Center//-${TopUpRight}/2" center-y="GlobalBottomRightPoint//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightBodyFrameHole" layer="Main"/>
+	<circle center-x="GlobalTopLeftPoint//Center//${upRight}/2" center-y="GlobalTopLeftPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftBodyFrameHole" layer="Holes"/>
+    	<circle center-x="GlobalBottomLeftPoint//Center//${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftBodyFrameHole" layer="Holes"/>
+	<circle center-x="GlobalTopRightPoint//Center//-${TopUpRight}/2" center-y="GlobalTopRightPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightBodyFrameHole" layer="Holes"/>
+    	<circle center-x="GlobalBottomRightPoint//Center//-${TopUpRight}/2" center-y="GlobalBottomRightPoint//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightBodyFrameHole" layer="Holes"/>
 	
 	<!-- Corner holes Middle Frame -->
-	<circle center-x="SeatHingeTopLeft//Center//${upRight}/2" center-y="SeatHingeTopLeft//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameHole" layer="Main"/>
-    	<circle center-x="SeatHingeBottomLeft//Center//${upRight}/2" center-y="SeatHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameHole" layer="Main"/>
-	<circle center-x="SeatHingeTopRight//Center//-${upRight}/2" center-y="SeatHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameHole" layer="Main"/>
-    	<circle center-x="SeatHingeBottomRight//Center//-${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameHole" layer="Main"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeTopLeft//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameHole" layer="Holes"/>
+	<circle center-x="SeatHingeTopRight//Center//-${upRight}/2" center-y="SeatHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomRight//Center//-${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameHole" layer="Holes"/>
 	
-	<circle center-x="SeatHingeTopAxleCut//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeTopAxleCut//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameAxleHole" layer="Main"/>
-    	<circle center-x="SeatHingeBottomAxleCut//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeBottomAxleCut//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameAxleHole" layer="Main"/>
-	<circle center-x="SeatHingeTopAxleCut//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeTopAxleCut//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameAxleHole" layer="Main"/>
-    	<circle center-x="SeatHingeBottomAxleCut//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeBottomAxleCut//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameAxleHole" layer="Main"/>
+	<circle center-x="SeatHingeTopMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeTopMiddle//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameAxleHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeBottomMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameAxleHole" layer="Holes"/>
+	<circle center-x="SeatHingeTopMiddle//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeTopMiddle//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameAxleHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeBottomMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameAxleHole" layer="Holes"/>
 	
 	<!-- Cut holes left -->	
-	<circle center-x="CutLeftTop//Center//-${upRight}/2" center-y="CutLeftTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftLeftTopHole" layer="Main"/>
-	<circle center-x="CutLeftTop//Center//${upRight}/2" center-y="CutLeftTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftRightTopHole" layer="Main"/>
-	<circle center-x="CutLeftBottom//Center//-${upRight}/2" center-y="CutLeftBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftLeftBottomHole" layer="Main"/>
-	<circle center-x="CutLeftBottom//Center//${upRight}/2" center-y="CutLeftBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftRightBottomHole" layer="Main"/>
+	<circle center-x="CutLeftTop//Center//-${upRight}/2" center-y="CutLeftTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftLeftTopHole" layer="Holes"/>
+	<circle center-x="CutLeftTop//Center//${upRight}/2" center-y="CutLeftTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftRightTopHole" layer="Holes"/>
+	<circle center-x="CutLeftBottom//Center//-${upRight}/2" center-y="CutLeftBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftLeftBottomHole" layer="Holes"/>
+	<circle center-x="CutLeftBottom//Center//${upRight}/2" center-y="CutLeftBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutLeftRightBottomHole" layer="Holes"/>
 	
 	<!-- Cut holes right -->	
-	<circle center-x="CutRightTop//Center//-${upRight}/2" center-y="CutRightTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightLeftTopHole" layer="Main"/>
-	<circle center-x="CutRightTop//Center//${upRight}/2" center-y="CutRightTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightRightTopHole" layer="Main"/>
-	<circle center-x="CutRightBottom//Center//-${upRight}/2" center-y="CutRightBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightLeftBottomHole" layer="Main"/>
-	<circle center-x="CutRightBottom//Center//${upRight}/2" center-y="CutRightBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightRightBottomHole" layer="Main"/>
+	<circle center-x="CutRightTop//Center//-${upRight}/2" center-y="CutRightTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightLeftTopHole" layer="Holes"/>
+	<circle center-x="CutRightTop//Center//${upRight}/2" center-y="CutRightTop//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightRightTopHole" layer="Holes"/>
+	<circle center-x="CutRightBottom//Center//-${upRight}/2" center-y="CutRightBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightLeftBottomHole" layer="Holes"/>
+	<circle center-x="CutRightBottom//Center//${upRight}/2" center-y="CutRightBottom//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CutRightRightBottomHole" layer="Holes"/>
 	
 	<!-- ################################### -->
 	<!-- ###          TOP LAYER         #### -->
