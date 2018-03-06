@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<variables>
+    <variable name="var1" value="1.0" print="false"/>
+    <variable name="var2" value="1.0" print="false"/>
+</variables>
