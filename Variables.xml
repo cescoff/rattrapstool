@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <variables>
-    <variable name="var1" value="1.0" print="false"/>
-    <variable name="var2" value="1.0" print="false"/>
+    <variable name="borderdistance" value="10.0"/>
+
+    <!-- User defined vars -->
+    <variable name="fullSeatHeight" value="430" print="true"/>
+    <variable name="fullSeatLength" value="320" print="true"/>
+    <variable name="fullSeatWidth" value="320" print="true"/>
+    <variable name="fullUpRight" value="50" print="true"/>
+    <variable name="fullHandleHeight" value="50" print="true"/>
+    <variable name="fullHandleLength" value="50" print="true"/>
+    <variable name="fullHingeToothWidth" value="19" print="true"/>
+    <variable name="fullWoodSpan" value="8" print="true"/>
+    <!-- End of user defined vars -->
+    
+    <!-- Autoscale expressions -->
+    <expression name="seatHeight" print="true" expression="${fullSeatHeight}"/>
+    <expression name="seatLength" print="true" expression="${fullSeatLength}"/>
+    <expression name="seatWidth" print="true" expression="${fullSeatWidth}"/>
+    <expression name="upRight" print="true" expression="${fullUpRight}"/>
+    <expression name="handleHeight" print="true" expression="${fullHandleHeight}"/>
+    <expression name="handleLength" print="true" expression="${fullHandleLength}"/>
+    <expression name="hingeToothWidth" print="true" expression="${fullHingeToothWidth}"/>
+    <expression name="woodSpan" print="true" expression="${fullWoodSpan}"/>
+    <!-- End of autoscale expressions -->
+    
+    <!-- Global expressions -->
+    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
+    <expression name="FT" print="true" expression="${PR} + ${seatLength}"/>
+    <expression name="IR" print="true" expression="${PR}/2"/>
+    <expression name="TopUpRight" print="true" expression="(4/3)*${upRight}"/>
+    <!-- End of global expressions -->
+    
+    <!-- Dynamic thumbnail expressions -->
+    <expression name="FTWithUpRight" print="true" expression="${FT}+${TopUpRight}"/>
+    <expression name="xT" print="true" expression="${FTWithUpRight}*(${seatLength}/${seatHeight})"/>
+    <expression name="yT" print="true" expression="${borderdistance}"/>
+    <expression name="xF" print="true" expression="${borderdistance}"/>
+    <expression name="yF" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatHeight}/${seatLength})"/>
+    <expression name="xP" print="true" expression="${borderdistance}"/>
+    <expression name="yP" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatHeight}/${seatLength}) - ${seatHeight}"/>
+    <expression name="xS" print="true" expression="${xP} + ${seatLength}"/>
+    <expression name="yS" print="true" expression="${yP}"/>
+    <!-- End of dynamic thumbnail expressions -->
+    
 </variables>
