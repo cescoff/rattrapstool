@@ -13,6 +13,7 @@
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
+    <variable name="fullLaserCutLength" value="580"/>
     <!-- End of user defined vars -->
     
     <!-- Autoscale expressions -->
@@ -27,6 +28,8 @@
     <expression name="woodSpan" print="true" expression="${fullWoodSpan}"/>
     <expression name="holeRadius" print="true" expression="${fullHoleRadius}"/>
     <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
+    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}"/>
+    
     <!-- End of autoscale expressions -->
     
     <!-- Global expressions -->
