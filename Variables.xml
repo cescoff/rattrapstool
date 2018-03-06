@@ -10,7 +10,7 @@
     <variable name="fullHandleHeight" value="50" print="true"/>
     <variable name="fullHandleLength" value="50" print="true"/>
     <variable name="fullHingeToothWidth" value="19" print="true"/>
-    <variable name="fullSeatHingeToothHeight" value="19" print="true"/>
+    <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
     <!-- End of user defined vars -->
