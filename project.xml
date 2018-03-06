@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
     <name>ProjectName</name>
-    <thumbnail-url>https://github.com/cescoff/&lt;PROJECT_URL_NAME&gt;/raw/master/project_preview.jpeg</thumbnail-url>
+    <thumbnail-url>https://github.com/cescoff/rattrapstool/raw/master/preview.jpg</thumbnail-url>
     <description>Description</description>
     <presentation>&lt;p&gt;Presentation&lt;/p&gt;</presentation>
     <variables-url>https://github.com/cescoff/project/Variables.xml</variables-url>
