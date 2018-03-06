@@ -30,10 +30,10 @@
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
     
     <path name="InBoundTop" layer="TopFace" action="CUT" >
-		<point x="SeatHingeTopLeft//Center//${upright}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
 		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
 		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
-		<point x="SeatHingeBottomLeft//Center//${upright}" y="SeatHingeBottomLeft//Center//0" />
-		<point x="SeatHingeTopLeft//Center//${upright}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//${upRight}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
 	</path>
 </blue-print>
