@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <blue-print>
     <distance-unit>mm</distance-unit>
-    <point x="1.0" y="1.0" name="APoint" layer="Main"/>
+<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
+	
+	<!-- Seat hinge crenel -->
+	<hinge 
+			min-width="${hingeToothWidth}" 
+			head-height="${seatHingeToothHeight}" 
+			border-offset="3*${woodSpan}" 
+			direction="backward" 
+			action="CUT" 
+			axle-distance1="${PR}"
+			axle-distance2="${seatLength}+${woodSpan}+${holeRadius}"
+			axle-layer="MiddleFace"
+			thickness="${chairThickness}"
+			head-span="${woodSpan}"
+			radius="${holeRadius}"
+			name="SeatHinge" 
+			layer="Main"
+			sharp-angle-layer="BottomFace">
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}+${seatWidth}"/>
+	</hinge>
+
+	<point x="SeatHingeTopRight//Center//${TopUpRight}" y="SeatHingeTopRight//Center//-${upRight}" name="GlobalTopRightPoint" layer="Main" />
+	<point x="SeatHingeTopRight//Center//${TopUpRight}" y="SeatHingeBottomRight//Center//+${upRight}" name="GlobalBottomRightPoint" layer="Main" />
+
+	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />
+	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
+    
+    <path name="InBoundTop" layer="TopFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${upright}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//${upright}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${upright}" y="SeatHingeTopLeft//Center//0" />
+	</path>
 </blue-print>
