@@ -11,8 +11,8 @@
     <variable name="fullHandleLength" value="50" print="true"/>
     <variable name="fullHingeToothWidth" value="19" print="true"/>
     <variable name="fullSeatHingeToothHeight" value="19" print="true"/>
-    
     <variable name="fullWoodSpan" value="8" print="true"/>
+    <variable name="fullHoleRadius" value="3.9"/>
     <!-- End of user defined vars -->
     
     <!-- Autoscale expressions -->
@@ -25,6 +25,8 @@
     <expression name="hingeToothWidth" print="true" expression="${fullHingeToothWidth}"/>
     <expression name="seatHingeToothHeight" print="true" expression="${fullSeatHingeToothHeight}"/>
     <expression name="woodSpan" print="true" expression="${fullWoodSpan}"/>
+    <expression name="holeRadius" print="true" expression="${fullHoleRadius}"/>
+    <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
     <!-- End of autoscale expressions -->
     
     <!-- Global expressions -->
