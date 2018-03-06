@@ -26,7 +26,7 @@
 	<point x="SeatHingeTopRight//Center//${TopUpRight}" y="SeatHingeTopRight//Center//-${upRight}" name="GlobalTopRightPoint" layer="Main" />
 	<point x="SeatHingeTopRight//Center//${TopUpRight}" y="SeatHingeBottomRight//Center//+${upRight}" name="GlobalBottomRightPoint" layer="Main" />
 
-	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />
+<!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
     
     <path name="InBoundTop" layer="TopFace" action="CUT" >
