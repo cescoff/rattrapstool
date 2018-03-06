@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>ProjectName</name>
+    <thumbnail-url>https://github.com/cescoff/&lt;PROJECT_URL_NAME&gt;/raw/master/project_preview.jpeg</thumbnail-url>
+    <description>Description</description>
+    <presentation>&lt;p&gt;Presentation&lt;/p&gt;</presentation>
+    <variables-url>https://github.com/cescoff/project/Variables.xml</variables-url>
+    <template-url>https://github.com/cescoff/project/Plan.xml</template-url>
+    <output-config-url>https://github.com/cescoff/project/PlanOutputConfig.xml</output-config-url>
+    <dynamic-preview-url>https://github.com/cescoff/project/Thumbnail.xml</dynamic-preview-url>
+    <dynamic-preview-output-url>https://github.com/cescoff/project/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
+    <documentation-url>https://github.com/cescoff/project/Plan.xml</documentation-url>
+    <default>
+        <variable name="var1" display-name="var1" unit="mm" description="var1 description">0.0</variable>
+        <variable name="var2" display-name="var2" unit="mm" description="var2 description">0.0</variable>
+    </default>
+    <printable>
+        <variable name="var1" display-name="var1" unit="mm" description="var1 description">0.0</variable>
+        <variable name="var2" display-name="var2" unit="mm" description="var2 description">0.0</variable>
+    </printable>
+</project>
