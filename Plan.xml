@@ -58,15 +58,27 @@
 	<!-- ###        MIDDLE LAYER        #### -->
 	<!-- ################################### -->
 
+
     <path name="InBoundMiddle" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
-		<point x="SeatHingeTopLeft//Center//${PR}" y="SeatHingeTopLeft//Center//0" />
-		<point x="SeatHingeTopLeft//Center//${PR}" y="SeatHingeTopLeft//Center//-${woodSpan}" />
-		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//-${woodSpan}" />
-		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${woodSpan}" />
-		<point x="SeatHingeBottomLeft//Center//${PR}" y="SeatHingeBottomLeft//Center//${woodSpan}" />
-		<point x="SeatHingeBottomLeft//Center//${PR}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//0" />
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
+    </path>
+
+    <path name="SliderTop" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//-${woodSpan}" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//-${woodSpan}" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
+    </path>
+	
+    <path name="SliderBottom" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeBottomLeft//Center//${PR}-${holeRadius}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//${PR}-${holeRadius}" y="SeatHingeBottomLeft//Center//${woodSpan}" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${woodSpan}" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
     </path>
 	
 	
