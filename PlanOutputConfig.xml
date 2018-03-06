@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <output-config>
     <outputs>
-        <output name="SampleOutput" format="SVG">
+        <output name="Chair_A" format="SVG">
             <layer>Main</layer>
+            <layer>TopFace</layer>
+<!--			<rotation angle="90" unit="DEG" center="GlobalTopRightPoint" />
+			<translation point1="GlobalTopRightPoint" point2="GlobalTopLeftPoint" />-->
+			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
+        </output>
+<!--        <output name="Chair_B" format="SVG">
+            <layer>Main</layer>
+            <layer>TopFace</layer>
+            <layer>TopFaceB</layer>
+			<splitter point1="CutRightTop" point2="CutRightBottom" />
+        </output>-->
+        <output name="Chair_B" format="SVG">
+            <layer>Main</layer>
+            <layer>MiddleFace</layer>
+            <layer>TopFaceB</layer>
+			<splitter point1="CutRightTop" point2="CutRightBottom" />
+        </output>
+<!--        <output name="Chair_D" format="SVG">
+            <layer>Main</layer>
+            <layer>BottomFace</layer>
+            <layer>BottomFaceD</layer>
+			<splitter point1="CutRightTop" point2="CutRightBottom" />
+        </output>-->
+        <output name="Chair_C" format="SVG">
+            <layer>Main</layer>
+            <layer>BottomFace</layer>
+			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
         </output>
     </outputs>
 </output-config>
