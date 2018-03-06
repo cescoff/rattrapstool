@@ -52,8 +52,8 @@
 	</path>
 	
 	<!-- HANDLE -->
-	<circle center-x="SeatHingeTopRight//Center//-${upRight}" center-y="SeatHingeTopRight//Center//+${seatWidth}/2-${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Main"/>
-    	<circle center-x="SeatHingeBottomRight//Center//-${upRight}" center-y="SeatHingeBottomRight//Center//-${seatWidth}/2+${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Main"/>
+	<circle center-x="SeatHingeTopAxleCut//Center//-${upRight}" center-y="SeatHingeTopAxleCut//Center//+${seatWidth}/2-${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Main"/>
+    	<circle center-x="SeatHingeBottomAxleCut//Center//-${upRight}" center-y="SeatHingeBottomAxleCut//Center//-${seatWidth}/2+${handleLength}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Main"/>
 	<path name="HandCarryTopLeft" layer="Main" action="CUT" >
 		<point x="HandCarryTopCircle//RadiusLeft//0" y="HandCarryTopCircle//RadiusLeft//0" />
 		<point x="HandCarryBottomCircle//RadiusLeft//0" y="HandCarryBottomCircle//RadiusLeft//0" />
@@ -76,8 +76,8 @@
 	<!-- Corner holes Middle Frame -->
 	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeTopLeft//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameHole" layer="Holes"/>
     	<circle center-x="SeatHingeBottomLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameHole" layer="Holes"/>
-	<circle center-x="SeatHingeTopRight//Center//-${upRight}/2" center-y="SeatHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameHole" layer="Holes"/>
-    	<circle center-x="SeatHingeBottomRight//Center//-${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameHole" layer="Holes"/>
+	<circle center-x="SeatHingeTopAxleCut//Center//-${upRight}/2" center-y="SeatHingeTopAxleCut//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightMiddleFrameHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomAxleCut//Center//-${upRight}/2" center-y="SeatHingeBottomAxleCut//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightMiddleFrameHole" layer="Holes"/>
 	
 	<circle center-x="SeatHingeTopMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeTopMiddle//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameAxleHole" layer="Holes"/>
     	<circle center-x="SeatHingeBottomMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeBottomMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameAxleHole" layer="Holes"/>
