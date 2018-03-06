@@ -3,33 +3,22 @@
     <outputs>
         <output name="Chair_A" format="SVG">
             <layer>Main</layer>
+            <layer>Holes</layer>
             <layer>TopFace</layer>
-<!--			<rotation angle="90" unit="DEG" center="GlobalTopRightPoint" />
-			<translation point1="GlobalTopRightPoint" point2="GlobalTopLeftPoint" />-->
-			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
+			<splitter point1="CutRightBottom" point2="CutRightBottom" />
         </output>
-<!--        <output name="Chair_B" format="SVG">
-            <layer>Main</layer>
-            <layer>TopFace</layer>
-            <layer>TopFaceB</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
-        </output>-->
         <output name="Chair_B" format="SVG">
             <layer>Main</layer>
+            <layer>Holes</layer>
             <layer>MiddleFace</layer>
             <layer>TopFaceB</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
+			<splitter point1="CutLeftTop" point2="CutLeftTop" />
         </output>
-<!--        <output name="Chair_D" format="SVG">
-            <layer>Main</layer>
-            <layer>BottomFace</layer>
-            <layer>BottomFaceD</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
-        </output>-->
         <output name="Chair_C" format="SVG">
             <layer>Main</layer>
+            <layer>Holes</layer>
             <layer>BottomFace</layer>
-			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
+			<splitter point1="CutRightBottom" point2="CutRightBottom" />
         </output>
     </outputs>
 </output-config>
