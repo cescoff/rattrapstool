@@ -48,7 +48,7 @@
 		<point x="GlobalTopRightPoint//Center//0" y="GlobalTopRightPoint//Center//0" />
 		<point x="GlobalBottomRightPoint//Center//0" y="GlobalBottomRightPoint//Center//0" />
 		<point x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0" />
-		<point x="SeatHingeBottomLeft//Center//" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//0" />
 	</path>
 	
 	<!-- HANDLE -->
