@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <blue-print>
     <distance-unit>mm</distance-unit>
+	
+	<!-- ################################### -->
+	<!-- ###         MAIN LAYER         #### -->
+	<!-- ################################### -->
+	
 	<!-- Default point -->
 	<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
 
@@ -36,12 +41,45 @@
 <!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
     
+	<!-- ################################### -->
+	<!-- ###          TOP LAYER         #### -->
+	<!-- ################################### -->
+	
     <path name="InBoundTop" layer="TopFace" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
 		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
 		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
 		<point x="SeatHingeBottomLeft//Center//${upRight}" y="SeatHingeBottomLeft//Center//0" />
 		<point x="SeatHingeTopLeft//Center//${upRight}" y="SeatHingeTopLeft//Center//0" />
+    </path>
+
+	
+	<!-- ################################### -->
+	<!-- ###        MIDDLE LAYER        #### -->
+	<!-- ################################### -->
+
+    <path name="InBoundMiddle" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${PR}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${PR}" y="SeatHingeTopLeft//Center//-${woodSpan}" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//-${woodSpan}" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}" y="SeatHingeBottomLeft//Center//${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
+    </path>
+	
+	
+	<!-- ################################### -->
+	<!-- ###        BOTTOM LAYER        #### -->
+	<!-- ################################### -->
+
+    <path name="InBoundBottom" layer="BottomFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//0" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
     </path>
 	
 </blue-print>
