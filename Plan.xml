@@ -52,7 +52,7 @@
 	<hinge 
 			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
-			border-offset="0" 
+			border-offset="1" 
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}+${lateralLockLength}"
@@ -71,7 +71,7 @@
 	<hinge 
 			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
-			border-offset="0" 
+			border-offset="1" 
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}+${lateralLockLength}"
