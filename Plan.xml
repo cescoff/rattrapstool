@@ -19,7 +19,7 @@
 	<hinge 
 			min-width="${hingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
-			border-offset="3*${woodSpan}" 
+			border-offset="${woodSpan}" 
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}"
@@ -41,6 +41,52 @@
 <!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
 	
+	<!-- Frame hinge points -->
+	<point x="GlobalTopLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalTopLeftPoint//Center//${woodSpan}" name="BodyFrameHingeTopTop" layer="Main" />
+	<point x="GlobalTopLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalTopLeftPoint//Center//${upRight}" name="BodyFrameHingeTopBottom" layer="Main" />
+	
+	<point x="GlobalBottomLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalBottomLeftPoint//Center//-${upRight}" name="BodyFrameHingeBottomTop" layer="Main" />
+	<point x="GlobalBottomLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalBottomLeftPoint//Center//-${woodSpan}" name="BodyFrameHingeBottomBottom" layer="Main" />
+	
+	<!-- Frame hinge definitions -->
+	<hinge 
+			min-width="12" 
+			head-height="${seatHingeToothHeight}" 
+			border-offset="0" 
+			direction="backward" 
+			action="CUT" 
+			axle-distance1="${PR}+${lateralLockLength}"
+			axle-distance2="${seatLength}+${woodSpan}+${holeRadius}-${lateralLockLength}"
+			axle-layer="MiddleFace"
+			thickness="${chairThickness}"
+			head-span="${woodSpan}"
+			radius="${holeRadius}"
+			name="FrameHingeTop" 
+			layer="Main"
+			sharp-angle-layer="BottomFace">
+		<point1 x="BodyFrameHingeTopTop//Center//0" y="BodyFrameHingeTopTop//Center//0"/>
+		<point2 x="BodyFrameHingeTopBottom//Center//0" y="BodyFrameHingeTopBottom//Center//0"/>
+	</hinge>
+
+	<hinge 
+			min-width="12" 
+			head-height="${seatHingeToothHeight}" 
+			border-offset="0" 
+			direction="backward" 
+			action="CUT" 
+			axle-distance1="${PR}+${lateralLockLength}"
+			axle-distance2="${seatLength}+${woodSpan}+${holeRadius}-${lateralLockLength}"
+			axle-layer="MiddleFace"
+			thickness="${chairThickness}"
+			head-span="${woodSpan}"
+			radius="${holeRadius}"
+			name="FrameHingeTop" 
+			layer="Main"
+			sharp-angle-layer="BottomFace">
+		<point1 x="BodyFrameHingeBottomTop//Center//0" y="BodyFrameHingeBottomTop//Center//0"/>
+		<point2 x="BodyFrameHingeBottomBottom//Center//0" y="BodyFrameHingeBottomBottom//Center//0"/>
+	</hinge>
+
 	<!-- BODY FRAME -->
 	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
