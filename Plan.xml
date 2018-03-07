@@ -198,6 +198,14 @@
 		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
 	</path>
 	
+	<path name="SeatAxleLeft" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeTopAxleCut//Center//0" />
+		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeBottomAxleCut//Center//0" />
+	</path>
+	<path name="SeatAxleRight" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopAxleCut//Center//-${woodSpan}" y="SeatHingeTopAxleCut//Center//0" />
+		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeBottomAxleCut//Center//0" />
+	</path>
 	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
