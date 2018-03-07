@@ -23,22 +23,23 @@
     <!-- End of user defined vars -->
     
     <!-- Autoscale expressions -->
-    <expression name="seatHeight" print="true" expression="${fullSeatHeight}"/>
-    <expression name="seatLength" print="true" expression="${fullSeatLength}"/>
-    <expression name="seatWidth" print="true" expression="${fullSeatWidth}"/>
-    <expression name="upRight" print="true" expression="${fullUpRight}"/>
-    <expression name="handleHeight" print="true" expression="${fullHandleHeight}"/>
-    <expression name="handleLength" print="true" expression="${fullHandleLength}"/>
-    <expression name="hingeToothWidth" print="true" expression="${fullHingeToothWidth}"/>
-    <expression name="frameHingeToothWidth" print="true" expression="${fullFrameHingeToothWidth}"/>
-    <expression name="seatHingeToothHeight" print="true" expression="${fullSeatHingeToothHeight}"/>
-    <expression name="woodSpan" print="true" expression="${fullWoodSpan}"/>
-    <expression name="holeRadius" print="true" expression="${fullHoleRadius}"/>
-    <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
-    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}"/>
-    <expression name="lateralLockLength" expression="${fullLateralLockLength}"/>
+    <expression name="frameHingeToothWidth" print="true" expression="Math.max(${fullFrameHingeToothWidth}/${aspectRatio}, 5)"/>
+    <expression name="hingeToothWidth" print="true" expression="Math.max(${fullHingeToothWidth}/${aspectRatio}, 9)"/>
+    <expression name="seatHingeToothHeight" print="true" expression="Math.max(${fullSeatHingeToothHeight}/${aspectRatio}, 20)"/>
+    <expression name="woodSpan" print="true" expression="Math.max(${fullWoodSpan}/${aspectRatio}, 5)"/>
+    <expression name="holeRadius" print="true" expression="Math.max(${fullHoleRadius}/${aspectRatio}, 2.9)"/>
+    <expression name="sliderDepth" expression="Math.max(${fullSliderDepth}/${aspectRatio}, 4)"/>
 
-    <expression name="sliderDepth" expression="${fullSliderDepth}"/>
+    <expression name="seatHeight" print="true" expression="${fullSeatHeight}/${aspectRatio}"/>
+    <expression name="seatLength" print="true" expression="${fullSeatLength}/${aspectRatio}"/>
+    <expression name="seatWidth" print="true" expression="${fullSeatWidth}/${aspectRatio}"/>
+    <expression name="upRight" print="true" expression="${fullUpRight}/${aspectRatio}"/>
+    <expression name="handleHeight" print="true" expression="${fullHandleHeight}/${aspectRatio}"/>
+    <expression name="handleLength" print="true" expression="${fullHandleLength}/${aspectRatio}"/>
+    <expression name="chairThickness" print="true" expression="(3*${woodSpan}+1)/${aspectRatio}"/>
+    <expression name="lateralLockLength" expression="${fullLateralLockLength}/${aspectRatio}"/>
+
+    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}"/>
 
     <!-- End of autoscale expressions -->
     
@@ -66,6 +67,6 @@
     <expression name="StoolLength" expression="${FTWithUpRight}" />
     <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
     
-    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 2)" validation="=0" />
+    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 2)" validation="==0" />
 
 </variables>
