@@ -41,13 +41,6 @@
 <!--	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//-${upRight}" name="GlobalTopLeftPoint" layer="Main" />-->
 	<point x="SeatHingeTopLeft//Center//0" y="SeatHingeBottomLeft//Center//+${upRight}" name="GlobalBottomLeftPoint" layer="Main" />
 	
-	<!-- Frame hinge points -->
-	<point x="GlobalTopLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalTopLeftPoint//Center//${woodSpan}" name="BodyFrameHingeTopTop" layer="Main" />
-	<point x="GlobalTopLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalTopLeftPoint//Center//${upRight}" name="BodyFrameHingeTopBottom" layer="Main" />
-	
-	<point x="GlobalBottomLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalBottomLeftPoint//Center//-${upRight}" name="BodyFrameHingeBottomTop" layer="Main" />
-	<point x="GlobalBottomLeftPoint//Center//${PR}+${lateralLockLength}" y="GlobalBottomLeftPoint//Center//-${woodSpan}" name="BodyFrameHingeBottomBottom" layer="Main" />
-	
 	<!-- Frame hinge definitions -->
 	<hinge 
 			min-width="${fullFrameHingeToothWidth}" 
@@ -64,7 +57,7 @@
 			name="FrameHingeTop" 
 			layer="Main"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//${woodSpan}"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
 	</hinge>
 
@@ -84,7 +77,7 @@
 			layer="Main"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${upRight}"/>
-		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0"/>
+		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${woodSpan}"/>
 	</hinge>
 
 	<!-- BODY FRAME -->
