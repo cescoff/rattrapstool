@@ -11,6 +11,7 @@
     <variable name="fullHandleLength" value="50" print="true"/>
     <variable name="fullLaserCutLength" value="720"/>
     <variable name="fullLateralLockLength" value="150"/>
+    <variable name="aspectRatio" value="1"/>
     
     <variable name="fullHingeToothWidth" value="19" print="true"/>
     <variable name="fullFrameHingeToothWidth" value="10" print="true"/>
@@ -65,4 +66,6 @@
     <expression name="StoolLength" expression="${FTWithUpRight}" />
     <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
     
+    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 2)" validation="=0" />
+
 </variables>
