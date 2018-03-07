@@ -39,7 +39,7 @@
     <expression name="chairThickness" print="true" expression="(3*${woodSpan}+1)/${aspectRatio}"/>
     <expression name="lateralLockLength" expression="${fullLateralLockLength}/${aspectRatio}"/>
 
-    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}"/>
+    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
 
     <!-- End of autoscale expressions -->
     
