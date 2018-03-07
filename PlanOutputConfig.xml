@@ -5,20 +5,20 @@
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>TopFace</layer>
-			<splitter point1="CutRightBottom" point2="CutRightBottom" />
+			<splitter point1="CutRightTop" point2="CutRightBottom" />
         </output>
         <output name="Chair_B" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>MiddleFace</layer>
             <layer>TopFaceB</layer>
-			<splitter point1="CutLeftTop" point2="CutLeftTop" />
+			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
         </output>
         <output name="Chair_C" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>BottomFace</layer>
-			<splitter point1="CutRightBottom" point2="CutRightBottom" />
+			<splitter point1="CutRightTop" point2="CutRightBottom" />
         </output>
     </outputs>
 </output-config>
