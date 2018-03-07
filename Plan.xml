@@ -83,6 +83,22 @@
 		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0"/>
 	</hinge>
 
+	<!-- Frame hinge blockers -->
+	
+	<path name="FrameHingeBlockerTop" layer="Main" action="CUT" >
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
+	</path>
+	
+	<path name="FrameHingeBlockerBottom" layer="Main" action="CUT" >
+		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
+		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
+	</path>
+	
 	<!-- BODY FRAME -->
 	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
