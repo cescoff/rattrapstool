@@ -62,4 +62,7 @@
     <expression name="yS" print="true" expression="${yP}"/>
     <!-- End of dynamic thumbnail expressions -->
     
+    <expression name="StoolLength" expression="${FTWithUpRight}" />
+    <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
+    
 </variables>
