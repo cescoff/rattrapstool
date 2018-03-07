@@ -204,7 +204,7 @@
 	</path>
 	<path name="SeatAxleRight" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopAxleCut//Center//-${woodSpan}" y="SeatHingeTopAxleCut//Center//0" />
-		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeBottomAxleCut//Center//0" />
+		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}" y="SeatHingeBottomAxleCut//Center//0" />
 	</path>
 	
 	<!-- ################################### -->
