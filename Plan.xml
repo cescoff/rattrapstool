@@ -45,7 +45,7 @@
 	<hinge 
 			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
-			border-offset="1" 
+			border-offset="${woodSpan}" 
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}+${lateralLockLength}"
@@ -64,7 +64,7 @@
 	<hinge 
 			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
-			border-offset="1" 
+			border-offset="${woodSpan}" 
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}+${lateralLockLength}"
@@ -167,8 +167,8 @@
 
 	<path name="SliderTop" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//0" />
-		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//-${woodSpan}" />
-		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//-${woodSpan}" />
+		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//-${sliderDepth}" />
+		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//-${sliderDepth}" />
 		<point x="SeatHingeTopRight//Center//0" y="SeatHingeTopRight//Center//0" />
 	</path>
 	
