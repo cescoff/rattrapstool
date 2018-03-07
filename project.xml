@@ -9,7 +9,7 @@
     <output-config-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/PlanOutputConfig.xml</output-config-url>
     <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Thumbnail.xml</dynamic-preview-url>
     <dynamic-preview-output-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
-    <documentation-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Plan.xml</documentation-url>
+    <documentation-url>https://raw.githubusercontent.com/cescoff/rattrapstool/master/Documentation.html</documentation-url>
     <default>
         <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">420</variable>
         <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
