@@ -50,7 +50,7 @@
 	
 	<!-- Frame hinge definitions -->
 	<hinge 
-			min-width="12" 
+			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
 			border-offset="0" 
 			direction="backward" 
@@ -64,12 +64,12 @@
 			name="FrameHingeTop" 
 			layer="Main"
 			sharp-angle-layer="BottomFace">
-		<point1 x="BodyFrameHingeTopTop//Center//0" y="BodyFrameHingeTopTop//Center//0"/>
-		<point2 x="BodyFrameHingeTopBottom//Center//0" y="BodyFrameHingeTopBottom//Center//0"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
 	</hinge>
 
 	<hinge 
-			min-width="12" 
+			min-width="${fullFrameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
 			border-offset="0" 
 			direction="backward" 
@@ -83,8 +83,8 @@
 			name="FrameHingeBottom" 
 			layer="Main"
 			sharp-angle-layer="BottomFace">
-		<point1 x="BodyFrameHingeBottomTop//Center//0" y="BodyFrameHingeBottomTop//Center//0"/>
-		<point2 x="BodyFrameHingeBottomBottom//Center//0" y="BodyFrameHingeBottomBottom//Center//0"/>
+		<point1 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${upRight}"/>
+		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0"/>
 	</hinge>
 
 	<!-- BODY FRAME -->
