@@ -9,7 +9,7 @@
     <variable name="fullUpRight" value="55" print="true"/>
     <variable name="fullHandleHeight" value="50" print="true"/>
     <variable name="fullHandleLength" value="50" print="true"/>
-    <variable name="fullLaserCutLength" value="580"/>
+    <variable name="fullLaserCutLength" value="720"/>
     <variable name="fullLateralLockLength" value="150"/>
     
     <variable name="fullHingeToothWidth" value="19" print="true"/>
