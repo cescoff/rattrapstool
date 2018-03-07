@@ -207,6 +207,19 @@
 		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}" y="SeatHingeBottomAxleCut//Center//0" />
 	</path>
 	
+	<!-- Leg Axles -->
+	<path name="LegAxleLeft" layer="MiddleFace" action="CUT" >
+		<point x="GlobalTopLeftPoint//Center//${IR}-${holeRadius}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalBottomLeftPoint//Center//${IR}-${holeRadius}" y="GlobalBottomLeftPoint//Center//0" />
+	</path>
+	
+	<path name="LegAxleRight" layer="MiddleFace" action="CUT" >
+		<point x="GlobalTopLeftPoint//Center//${IR}+${holeRadius}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalBottomLeftPoint//Center//${IR}+${holeRadius}" y="GlobalBottomLeftPoint//Center//0" />
+	</path>
+		
+	
+	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
 	<!-- ################################### -->
