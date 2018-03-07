@@ -6,7 +6,7 @@
     <variable name="fullSeatHeight" value="430" print="true"/>
     <variable name="fullSeatLength" value="320" print="true"/>
     <variable name="fullSeatWidth" value="320" print="true"/>
-    <variable name="fullUpRight" value="50" print="true"/>
+    <variable name="fullUpRight" value="55" print="true"/>
     <variable name="fullHandleHeight" value="50" print="true"/>
     <variable name="fullHandleLength" value="50" print="true"/>
     <variable name="fullHingeToothWidth" value="19" print="true"/>
@@ -14,6 +14,7 @@
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
     <variable name="fullLaserCutLength" value="580"/>
+    <variable name="fullLateralLockLength" value="150"/>
     <!-- End of user defined vars -->
     
     <!-- Autoscale expressions -->
@@ -29,6 +30,7 @@
     <expression name="holeRadius" print="true" expression="${fullHoleRadius}"/>
     <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
     <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}"/>
+    <expression name="lateralLockLength" expression="${fullLateralLockLength}"/>
     
     <!-- End of autoscale expressions -->
     
