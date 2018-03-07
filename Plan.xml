@@ -57,7 +57,7 @@
 			name="FrameHingeTop" 
 			layer="Main"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//${woodSpan}"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
 	</hinge>
 
@@ -77,7 +77,7 @@
 			layer="Main"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${upRight}"/>
-		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${woodSpan}"/>
+		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0"/>
 	</hinge>
 
 	<!-- BODY FRAME -->
