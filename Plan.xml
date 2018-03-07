@@ -80,7 +80,7 @@
 			thickness="${chairThickness}"
 			head-span="${woodSpan}"
 			radius="${holeRadius}"
-			name="FrameHingeTop" 
+			name="FrameHingeBottom" 
 			layer="Main"
 			sharp-angle-layer="BottomFace">
 		<point1 x="BodyFrameHingeBottomTop//Center//0" y="BodyFrameHingeBottomTop//Center//0"/>
