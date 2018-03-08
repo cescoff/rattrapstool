@@ -127,7 +127,7 @@
 	
 	<!-- Corner holes Body Frame -->
 	<circle center-x="GlobalTopLeftPoint//Center//${upRight}/2" center-y="GlobalTopLeftPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftBodyFrameHole" layer="Holes"/>
-    	<circle center-x="GlobalBottomLeftPoint//Center//${upRight}/2" center-y="SeatHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftBodyFrameHole" layer="Holes"/>
+    	<circle center-x="GlobalBottomLeftPoint//Center//${upRight}/2" center-y="GlobalBottomLeftPoint//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftBodyFrameHole" layer="Holes"/>
 	<circle center-x="GlobalTopRightPoint//Center//-${TopUpRight}/2" center-y="GlobalTopRightPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightBodyFrameHole" layer="Holes"/>
     	<circle center-x="GlobalBottomRightPoint//Center//-${TopUpRight}/2" center-y="GlobalBottomRightPoint//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightBodyFrameHole" layer="Holes"/>
 	
