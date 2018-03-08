@@ -27,7 +27,7 @@
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="${woodSpan}"
-			radius="${holeRadius}"
+			radius="${woodSpan}"
 			name="SeatHinge" 
 			layer="Main"
 	       		auto-axle-distance-cut="false"
@@ -54,7 +54,7 @@
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="${woodSpan}"
-			radius="${holeRadius}"
+			radius="${woodSpan}"
 			name="FrameHingeTop" 
 			layer="Main"
 	       		auto-axle-distance-cut="false"
@@ -74,7 +74,7 @@
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="${woodSpan}"
-			radius="${holeRadius}"
+			radius="${woodSpan}"
 			name="FrameHingeBottom" 
 			layer="Main"
 	       		auto-axle-distance-cut="false"
@@ -242,6 +242,25 @@
 		<point x="SeatHingeTopAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeTopAxleCut//Center//${upRight}"/>
 		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
 	</path>
+	
+	<!-- Blockers -->
+	<path name="BlockerLeft" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}" y="SeatHingeTopLeft//Center//${upRight}"/>
+		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}" y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}"/>
+		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}" y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}"/>
+	</path>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}/2" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}/2" radius="(3/2)*${woodSpan}+1" action="CUT" name="BlockerLeftCentroidAxle" layer="Holes"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}/2" center-y="SeatHingeTopLeft//Center//${upRight}+2*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockTop1" layer="Holes"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}/2" center-y="SeatHingeTopLeft//Center//${upRight}+4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockTop2" layer="Holes"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}-2*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockBottom1" layer="Holes"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}-4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockBottom1" layer="Holes"/>
+
+	<path name="BlockerRight" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}" y="SeatHingeTopMiddle//Center//${upRight}"/>
+		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}" y="SeatHingeTopMiddle//Center//${upRight}+${lateralLockLength}"/>
+		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}+${lateralLockLength}"/>
+	</path>
+	<circle center-x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}/2" center-y="SeatHingeTopMiddle//Center//${upRight}+${lateralLockLength}/2" radius="(3/2)*${holeRadius}+1" action="CUT" name="BlockerRightCentroidAxle" layer="Holes"/>
 	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
