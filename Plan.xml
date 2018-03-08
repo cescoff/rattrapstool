@@ -44,7 +44,7 @@
 	
 	<!-- Frame hinge definitions -->
 	<hinge 
-			min-width="${fullFrameHingeToothWidth}" 
+			min-width="${frameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
 			border-offset="1" 
 			direction="backward" 
@@ -64,7 +64,7 @@
 	</hinge>
 
 	<hinge 
-			min-width="${fullFrameHingeToothWidth}" 
+			min-width="${frameHingeToothWidth}" 
 			head-height="${seatHingeToothHeight}" 
 			border-offset="1" 
 			direction="backward" 
