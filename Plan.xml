@@ -218,7 +218,27 @@
 		<point x="GlobalBottomLeftPoint//Center//${IR}+${holeRadius}" y="GlobalBottomLeftPoint//Center//0" />
 	</path>
 		
-	
+	<!-- Weight reduction spaces -->
+	<path name="LegWeightReductionLeft" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}" y="SeatHingeTopLeft//Center//${upRight}"/>
+    		<point x="SeatHingeBottomLeft//Center//${upRight}+${upRight}" y="SeatHingeBottomLeft//Center//-${upRight}"/>
+    		<point x="SeatHingeBottomLeft//Center//${IR}-${upRight}-${holeRadius}" y="SeatHingeBottomLeft//Center//-${upRight}"/>
+    		<point x="SeatHingeTopLeft//Center//${IR}-${upRight}-${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
+	</path>
+		
+	<path name="LegWeightReductionRight" layer="MiddleFace" action="CUT" >
+    		<point x="SeatHingeTopLeft//Center//${IR}+${upRight}+${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
+    		<point x="SeatHingeBottomLeft//Center//${IR}+${upRight}+${holeRadius}" y="SeatHingeBottomLeft//Center//-${upRight}"/>
+    		<point x="SeatHingeBottomMiddle//Center//-${upRight}-${seatHingeToothHeight}" y="SeatHingeBottomMiddle//Center//-${upRight}"/>
+		<point x="SeatHingeTopMiddle//Center//-${upRight}-${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
+	</path>
+
+	<path name="SeatWeightReduction" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
+    		<point x="SeatHingeBottomMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeBottomMiddle//Center//-${upRight}"/>
+    		<point x="SeatHingeBottomAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeBottomAxleCut//Center//-${upRight}"/>
+		<point x="SeatHingeTopAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeTopAxleCut//Center//${upRight}"/>
+	</path>
 	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
