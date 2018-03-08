@@ -59,8 +59,8 @@
 			layer="Main"
 	       		auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
-		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
+		<point1 x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//${woodSpan}"/>
+		<point2 x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//${upRight}"/>
 	</hinge>
 
 	<hinge 
@@ -80,7 +80,7 @@
 	       		auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${upRight}"/>
-		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//0"/>
+		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${woodSpan}"/>
 	</hinge>
 
 	<!-- Frame hinge blockers -->
