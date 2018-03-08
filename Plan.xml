@@ -253,7 +253,7 @@
 	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}/2" center-y="SeatHingeTopLeft//Center//${upRight}+2*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockTop1" layer="Holes"/>
 	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}+${chairThickness}/2" center-y="SeatHingeTopLeft//Center//${upRight}+4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockTop2" layer="Holes"/>
 	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}-2*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockBottom1" layer="Holes"/>
-	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}-4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockBottom1" layer="Holes"/>
+	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}" center-y="SeatHingeTopLeft//Center//${upRight}+${lateralLockLength}-4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerLeftLockBottom2" layer="Holes"/>
 
 	<path name="BlockerRight" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}" y="SeatHingeTopMiddle//Center//${upRight}"/>
