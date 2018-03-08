@@ -86,17 +86,17 @@
 	<!-- Frame hinge blockers -->
 	
 	<path name="FrameHingeBlockerTop" layer="Main" action="CUT" >
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
 		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
-		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//${woodSpan}" />
-		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//${woodSpan}" />
 		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
+		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
 	</path>
 	
 	<path name="FrameHingeBlockerBottom" layer="Main" action="CUT" >
+		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
 		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
-		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
-		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
 		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
 	</path>
 	
 	<!-- BODY FRAME -->
