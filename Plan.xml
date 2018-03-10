@@ -83,22 +83,6 @@
 		<point2 x="GlobalBottomLeftPoint//Center//0" y="GlobalBottomLeftPoint//Center//-${woodSpan}"/>
 	</hinge>
 
-	<!-- Frame hinge blockers -->
-	
-	<path name="FrameHingeBlockerTop" layer="Main" action="CUT" >
-		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
-		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
-		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
-		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
-	</path>
-	
-	<path name="FrameHingeBlockerBottom" layer="Main" action="CUT" >
-		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
-		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
-		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
-		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
-	</path>
-	
 	<!-- BODY FRAME -->
 	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
@@ -119,6 +103,22 @@
 	<path name="HandCarryTopRight" layer="Main" action="CUT" >
 		<point x="HandCarryTopCircle//RadiusRight//0" y="HandCarryTopCircle//RadiusRight//0" />
 		<point x="HandCarryBottomCircle//RadiusRight//0" y="HandCarryBottomCircle//RadiusRight//0" />
+	</path>
+	
+	<!-- Frame hinge blockers -->
+	
+	<path name="FrameHingeBlockerTop" layer="Main" action="CUT" >
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
+		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//0" />
+		<point x="FrameHingeTopTopMiddle//Center//${lateralLockLength}/2" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+	</path>
+	
+	<path name="FrameHingeBlockerBottom" layer="Main" action="CUT" >
+		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//-${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//0" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2" y="FrameHingeBottomBottomMiddle//Center//${woodSpan}" />
 	</path>
 	
 	<!-- ################################### -->
@@ -184,6 +184,8 @@
 		<point x="SeatHingeTopLeft//Center//0" y="SeatHingeTopLeft//Center//0" />
 	</path>
 
+	<!-- Sliders -->
+	
 	<path name="SliderTop" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//0" />
 		<point x="SeatHingeTopLeft//Center//${PR}-${holeRadius}" y="SeatHingeTopLeft//Center//-${sliderDepth}" />
@@ -198,6 +200,8 @@
 		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
 	</path>
 	
+	<!-- Seat Axle -->
+	
 	<path name="SeatAxleLeft" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeTopAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeTopAxleCut//Center//0" />
 		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}-2*${holeRadius}" y="SeatHingeBottomAxleCut//Center//0" />
@@ -207,7 +211,7 @@
 		<point x="SeatHingeBottomAxleCut//Center//-${woodSpan}" y="SeatHingeBottomAxleCut//Center//0" />
 	</path>
 	
-	<!-- Leg Axles -->
+	<!-- Leg Axle -->
 	<path name="LegAxleLeft" layer="MiddleFace" action="CUT" >
 		<point x="GlobalTopLeftPoint//Center//${IR}-${holeRadius}" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalBottomLeftPoint//Center//${IR}-${holeRadius}" y="GlobalBottomLeftPoint//Center//0" />
@@ -265,6 +269,37 @@
 	<circle center-x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}/2" center-y="SeatHingeTopMiddle//Center//${upRight}+4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerRightLockTop2" layer="MiddleFace"/>
 	<circle center-x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}/2" center-y="SeatHingeTopMiddle//Center//${upRight}+${lateralLockLength}-2*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerRightLockBottom1" layer="MiddleFace"/>
 	<circle center-x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}+${chairThickness}/2" center-y="SeatHingeTopMiddle//Center//${upRight}+${lateralLockLength}-4*${woodSpan}" radius="${holeRadius}" action="CUT" name="BlockerRightLockBottom2" layer="MiddleFace"/>
+	 
+	<!-- Leg hinge blockers holes -->
+	
+	<path name="FrameHingeBlockerHoleTop1" layer="MiddleFace" action="CUT" >
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+1.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+1.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+2.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+2.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+	</path>
+	
+	<path name="FrameHingeBlockerHoleTop2" layer="MiddleFace" action="CUT" >
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+3.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+3.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+4.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeTopTopMiddle//Center//-${lateralLockLength}/2+4.5*${woodSpan}" y="FrameHingeTopTopMiddle//Center//-${woodSpan}" />
+	</path>
+	
+	<path name="FrameHingeBlockerHoleTop3" layer="MiddleFace" action="CUT" >
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-1.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-1.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-2.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-2.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+	</path>
+
+	<path name="FrameHingeBlockerHoleTop4" layer="MiddleFace" action="CUT" >
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-3.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-3.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-4.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-2.5*${woodSpan}" />
+		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-4.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//-${woodSpan}" />
+	</path>
+
 	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
