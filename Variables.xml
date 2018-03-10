@@ -36,7 +36,7 @@
     <expression name="upRight" print="true" expression="${fullUpRight}/${aspectRatio}"/>
     <expression name="handleHeight" print="true" expression="${fullHandleHeight}/${aspectRatio}"/>
     <expression name="handleLength" print="true" expression="${fullHandleLength}/${aspectRatio}"/>
-    <expression name="chairThickness" print="true" expression="(3*${woodSpan}+1)/${aspectRatio}"/>
+    <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
     <expression name="lateralLockLength" expression="${fullLateralLockLength}/${aspectRatio}"/>
 
     <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
