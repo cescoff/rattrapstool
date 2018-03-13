@@ -74,6 +74,6 @@
     <expression name="StoolLength" expression="${FTWithUpRight}" />
     <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
     
-    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 2)" validation="==0" />
+    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 1.6)*(${aspectRatio} - 2)" validation="==0" />
 
 </variables>
