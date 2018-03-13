@@ -15,7 +15,7 @@
 	
 	<path name="THT" layer="Main" action="VIEW">
 		<point x="TH//Center//0" y="TH//Center//0" />
-		<point x="TH//Center//0" y="TH//Center//${upRightHingeDistance2}" />
+		<point x="TH//Center//0" y="TH//Center//${upRightHingeDistance2}+${TopUpRight}" />
 	</path>
 	
 	<path name="PR" layer="Main" action="VIEW">
