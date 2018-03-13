@@ -10,7 +10,7 @@
     <variable name="fullHandleHeight" value="50" print="true"/>
     <variable name="fullHandleLength" value="50" print="true"/>
     <variable name="fullLaserCutLength" value="720"/>
-    <variable name="fullLateralLockLength" value="150"/>
+    <variable name="fullLateralLockLength" value="100"/>
     <variable name="aspectRatio" value="1"/>
     
     <variable name="fullHingeToothWidth" value="19" print="true"/>
