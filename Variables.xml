@@ -18,7 +18,7 @@
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
-    <variable name="fullSliderDepth" value="5"/>
+    <variable name="fullSliderDepth" value="6"/>
     
     <!-- End of user defined vars -->
     
