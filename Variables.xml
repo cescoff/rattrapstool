@@ -48,6 +48,10 @@
     <expression name="FT" print="true" expression="${PR} + ${seatLength}"/>
     <expression name="IR" print="true" expression="${PR}/2"/>
     <expression name="TopUpRight" print="true" expression="(4/3)*${upRight}"/>
+
+    <expression name="upRightHingeDistance1" expression="${PR}+${lateralLockLength}"/>
+    <expression name="upRightHingeDistance2" expression="${seatLength}+${woodSpan}+${holeRadius}-${lateralLockLength}"/>
+    
     <!-- End of global expressions -->
     
     <!-- Dynamic thumbnail expressions -->
