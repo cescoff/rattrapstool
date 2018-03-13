@@ -30,7 +30,7 @@
 			radius="${woodSpan}"
 			name="SeatHinge" 
 			layer="Main"
-	       		auto-axle-distance-cut="false"
+	       		auto-axle-distance-cut="true"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}+${seatWidth}"/>
