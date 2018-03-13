@@ -328,6 +328,34 @@
 		<point x="FrameHingeBottomBottomMiddle//Center//${lateralLockLength}/2-3.5*${woodSpan}" y="FrameHingeBottomBottomMiddle//Center//0" />
 	</path>-->
 
+	<!-- Blockers placeholders -->
+	<path name="InsideBlockerPlaceHolderTop1" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+1.5*${woodSpan}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+1.5*${woodSpan}" y="SeatHingeTopLeft//Center//-1.5*${woodSpan}" />
+		<point x="SeatHingeTopLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+2.5*${woodSpan}" y="SeatHingeTopLeft//Center//-1.5*${woodSpan}" />
+		<point x="SeatHingeTopLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+2.5*${woodSpan}" y="SeatHingeTopLeft//Center//0" />
+	</path>
+
+	<path name="InsideBlockerPlaceHolderTop2" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeTopLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-1.5*${woodSpan}" y="SeatHingeTopLeft//Center//0" />
+		<point x="SeatHingeTopLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-1.5*${woodSpan}" y="SeatHingeTopLeft//Center//-1.5*${woodSpan}" />
+		<point x="SeatHingeTopLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-2.5*${woodSpan}" y="SeatHingeTopLeft//Center//-1.5*${woodSpan}" />
+		<point x="SeatHingeTopLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-2.5*${woodSpan}" y="SeatHingeTopLeft//Center//0" />
+	</path>
+
+	<path name="InsideBlockerPlaceHolderBottom1" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeBottomLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+1.5*${woodSpan}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+1.5*${woodSpan}" y="SeatHingeBottomLeft//Center//+1.5*${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+2.5*${woodSpan}" y="SeatHingeBottomLeft//Center//+1.5*${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+(${chairThickness}*${PR})/${seatHeight}+2.5*${woodSpan}" y="SeatHingeBottomLeft//Center//0" />
+	</path>
+
+	<path name="InsideBlockerPlaceHolderBottom2" layer="MiddleFace" action="CUT" >
+		<point x="SeatHingeBottomLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-1.5*${woodSpan}" y="SeatHingeBottomLeft//Center//0" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-1.5*${woodSpan}" y="SeatHingeBottomLeft//Center//+1.5*${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-2.5*${woodSpan}" y="SeatHingeBottomLeft//Center//+1.5*${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}-2.5*${woodSpan}" y="SeatHingeBottomLeft//Center//0" />
+	</path>
 	
 	<!-- ################################### -->
 	<!-- ###        BOTTOM LAYER        #### -->
