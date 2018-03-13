@@ -25,7 +25,7 @@
     <!-- Autoscale expressions -->
     <expression name="frameHingeToothWidth" print="true" expression="Math.max(${fullFrameHingeToothWidth}/${aspectRatio}, 4)"/>
     <expression name="hingeToothWidth" print="true" expression="Math.max(${fullHingeToothWidth}/${aspectRatio}, 9)"/>
-    <expression name="seatHingeToothHeight" print="true" expression="Math.max(${fullSeatHingeToothHeight}/${aspectRatio}, 24)"/>
+    <expression name="seatHingeToothHeight" print="true" expression="Math.max(${fullSeatHingeToothHeight}/${aspectRatio}, 20)"/>
     <expression name="woodSpan" print="true" expression="Math.max(${fullWoodSpan}/${aspectRatio}, 5)"/>
     <expression name="holeRadius" print="true" expression="Math.max(${fullHoleRadius}/${aspectRatio}, 2.9)"/>
     <expression name="sliderDepth" expression="Math.max(${fullSliderDepth}/${aspectRatio}, 4)"/>
