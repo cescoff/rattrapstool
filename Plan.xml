@@ -200,8 +200,8 @@
 	
 	<path name="SliderBottom" layer="MiddleFace" action="CUT" >
 		<point x="SeatHingeBottomLeft//Center//${PR}-${holeRadius}" y="SeatHingeBottomLeft//Center//0" />
-		<point x="SeatHingeBottomLeft//Center//${PR}-${holeRadius}" y="SeatHingeBottomLeft//Center//${woodSpan}" />
-		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${woodSpan}" />
+		<point x="SeatHingeBottomLeft//Center//${PR}-${holeRadius}" y="SeatHingeBottomLeft//Center//${sliderDepth}" />
+		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//${sliderDepth}" />
 		<point x="SeatHingeBottomRight//Center//0" y="SeatHingeBottomRight//Center//0" />
 	</path>
 	
