@@ -131,6 +131,11 @@
 	<circle center-x="GlobalTopRightPoint//Center//-${TopUpRight}/2" center-y="GlobalTopRightPoint//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightBodyFrameHole" layer="Holes"/>
     	<circle center-x="GlobalBottomRightPoint//Center//-${TopUpRight}/2" center-y="GlobalBottomRightPoint//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightBodyFrameHole" layer="Holes"/>
 	
+	<circle center-x="SeatHingeTopMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeTopMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftBodyFrameAxleHole" layer="Holes"/>
+	<circle center-x="SeatHingeTopMiddle//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeTopMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="TopRightBodyFrameAxleHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//-${upRight}/2-${seatHingeToothHeight}" center-y="SeatHingeBottomMiddle//Center//+${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftBodyFrameAxleHole" layer="Holes"/>
+    	<circle center-x="SeatHingeBottomMiddle//Center//+${upRight}/2+${seatHingeToothHeight}" center-y="SeatHingeBottomMiddle//Center//+${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomRightBodyFrameAxleHole" layer="Holes"/>
+
 	<!-- Corner holes Middle Frame -->
 	<circle center-x="SeatHingeTopLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeTopLeft//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="TopLeftMiddleFrameHole" layer="Holes"/>
     	<circle center-x="SeatHingeBottomLeft//Center//${upRight}+${upRight}/2" center-y="SeatHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="BottomLeftMiddleFrameHole" layer="Holes"/>
