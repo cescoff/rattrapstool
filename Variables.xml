@@ -58,6 +58,8 @@
     <expression name="FTWithUpRight" print="true" expression="${FT}+${TopUpRight}"/>
     <expression name="xT" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatLength}/${PR})"/>
     <expression name="yT" print="true" expression="${borderdistance}"/>
+    <expression name="xTH" print="true" expression="${borderdistance}+${upRightHingeDistance1}*(${seatLength}/${PR})"/>
+    <expression name="yTH" print="true" expression="${borderdistance}"/>
     <expression name="xF" print="true" expression="${borderdistance}"/>
     <expression name="yF" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatHeight}/${PR})"/>
     <expression name="xR" print="true" expression="${borderdistance}+${seatLength}"/>
