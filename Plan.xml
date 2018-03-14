@@ -234,6 +234,10 @@
     		<point x="SeatHingeBottomLeft//Center//${IR}-${upRight}-${holeRadius}" y="SeatHingeBottomLeft//Center//-${upRight}"/>
     		<point x="SeatHingeTopLeft//Center//${IR}-${upRight}-${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
 		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}" y="SeatHingeTopLeft//Center//${upRight}"/>
+		<extra-layers>
+			<layer name="TopFace" condition="${enlightAllLayers}">
+			<layer name="BottomFace" condition="${enlightAllLayers}">
+		</extra-layers>
 	</path>
 		
 	<path name="LegWeightReductionRight" layer="MiddleFace" action="CUT" >
@@ -242,6 +246,10 @@
     		<point x="SeatHingeBottomMiddle//Center//-${upRight}-${seatHingeToothHeight}" y="SeatHingeBottomMiddle//Center//-${upRight}"/>
 		<point x="SeatHingeTopMiddle//Center//-${upRight}-${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
     		<point x="SeatHingeTopLeft//Center//${IR}+${upRight}+${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
+		<extra-layers>
+			<layer name="TopFace" condition="${enlightAllLayers}">
+			<layer name="BottomFace" condition="${enlightAllLayers}">
+		</extra-layers>
 	</path>
 
 	<path name="SeatWeightReduction" layer="MiddleFace" action="CUT" >
@@ -250,6 +258,10 @@
     		<point x="SeatHingeBottomAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeBottomAxleCut//Center//-${upRight}"/>
 		<point x="SeatHingeTopAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeTopAxleCut//Center//${upRight}"/>
 		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
+		<extra-layers>
+			<layer name="TopFace" condition="${enlightAllLayers}">
+			<layer name="BottomFace" condition="${enlightAllLayers}">
+		</extra-layers>
 	</path>
 	
 	<!-- Blockers -->
