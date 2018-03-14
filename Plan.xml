@@ -235,8 +235,8 @@
     		<point x="SeatHingeTopLeft//Center//${IR}-${upRight}-${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
 		<point x="SeatHingeTopLeft//Center//${upRight}+${upRight}" y="SeatHingeTopLeft//Center//${upRight}"/>
 		<extra-layers>
-			<layer name="TopFace" condition="${enlightAllLayers}">
-			<layer name="BottomFace" condition="${enlightAllLayers}">
+			<layer name="TopFace" condition="${enlightAllLayers}"/>
+			<layer name="BottomFace" condition="${enlightAllLayers}"/>
 		</extra-layers>
 	</path>
 		
@@ -247,8 +247,8 @@
 		<point x="SeatHingeTopMiddle//Center//-${upRight}-${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
     		<point x="SeatHingeTopLeft//Center//${IR}+${upRight}+${holeRadius}" y="SeatHingeTopLeft//Center//${upRight}"/>
 		<extra-layers>
-			<layer name="TopFace" condition="${enlightAllLayers}">
-			<layer name="BottomFace" condition="${enlightAllLayers}">
+			<layer name="TopFace" condition="${enlightAllLayers}"/>
+			<layer name="BottomFace" condition="${enlightAllLayers}"/>
 		</extra-layers>
 	</path>
 
@@ -259,8 +259,8 @@
 		<point x="SeatHingeTopAxleCut//Center//-${upRight}-${upRight}" y="SeatHingeTopAxleCut//Center//${upRight}"/>
 		<point x="SeatHingeTopMiddle//Center//${upRight}+${seatHingeToothHeight}" y="SeatHingeTopMiddle//Center//${upRight}"/>
 		<extra-layers>
-			<layer name="TopFace" condition="${enlightAllLayers}">
-			<layer name="BottomFace" condition="${enlightAllLayers}">
+			<layer name="TopFace" condition="${enlightAllLayers}"/>
+			<layer name="BottomFace" condition="${enlightAllLayers}"/>
 		</extra-layers>
 	</path>
 	
