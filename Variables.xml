@@ -20,6 +20,10 @@
     <variable name="fullHoleRadius" value="3.9"/>
     <variable name="fullSliderDepth" value="6"/>
     
+    <!-- Boolean conditions -->
+    
+    <variable name="enlightAllLayers" type="boolean" value="false" print="true" />
+    
     <!-- End of user defined vars -->
     
     <!-- Autoscale expressions -->
